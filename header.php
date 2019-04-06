@@ -25,25 +25,35 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'edge' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
+		<div class="site-branding"       
+      <?php if ( get_header_image() ) : ?>
+      
+          
+        style="background-image: url(<?php header_image(); ?>);"           
+      
+      <?php endif; ?>
+    >
+
+    <?php
+      // If there is a custom logo, use it instead of site title.
+			if ( has_custom_logo() ) :
+				the_custom_logo();
 			else :
 				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				<?php
-			endif;
+      endif;
+
+      // If the theme uses an overlay, add it here.
+      if ( function_exists('dd_add_overlay') ) dd_add_overlay();
+
 			$edge_description = get_bloginfo( 'description', 'display' );
 			if ( $edge_description || is_customize_preview() ) :
 				?>
 				<p class="site-description"><?php echo $edge_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
-		</div><!-- .site-branding -->
-
+    </div><!-- .site-branding -->
+    
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'edge' ); ?></button>
 			<?php

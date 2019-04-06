@@ -22,7 +22,8 @@ function edge_custom_header_setup() {
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
-		'flex-height'            => true,
+    'flex-height'            => true,
+    'flex-width'             => true,
 		'wp-head-callback'       => 'edge_header_style',
 	) ) );
 }

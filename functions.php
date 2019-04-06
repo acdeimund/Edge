@@ -120,7 +120,18 @@ add_action( 'widgets_init', 'edge_widgets_init' );
  * Enqueue scripts and styles.
  */
 function edge_scripts() {
-	wp_enqueue_style( 'edge-style', get_stylesheet_uri() );
+
+  // Bootstrap stylesheet
+  wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap.min.css' );
+
+  // User Stylesheet
+  wp_enqueue_style( 'edge-style', get_stylesheet_uri() );
+  
+  // Bootstrap scripts
+  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), null, true);
+  wp_enqueue_script( 'popper',  get_template_directory_uri() . '/js/popper.min.js', null, null, true);
+  wp_enqueue_script( 'user scripts',  get_template_directory_uri() . '/js/scripts.js', null, null, true);
+
 
 	wp_enqueue_script( 'edge-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

@@ -1,0 +1,25 @@
+.site-header{
+  background-color: #ffccaa;
+  opacity: 50%;
+  padding-bottom: 1rem;
+
+  .custom-logo {
+    max-width: 20rem;
+    margin: 3rem;
+  }
+
+  .site-branding{
+    background-size: cover;
+  }
+
+  .menu-primary-container{
+    padding-top: 1rem;
+
+    .nav-menu{
+      .menu-item{
+        margin: 0 1rem;
+      }
+    }
+  }
+}
+
