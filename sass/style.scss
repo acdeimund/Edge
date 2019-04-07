@@ -34,9 +34,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Alignments
 # Clearings
 # Widgets
+# Header
 # Content
 	## Posts and pages
-	## Comments
+  ## Comments
+# Footer
 # Infinite scroll
 # Media
 	## Captions
@@ -99,6 +101,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Content
 --------------------------------------------------------------*/
 @import "site/site";
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+@import "layout/footer";
 
 /*--------------------------------------------------------------
 # Infinite scroll

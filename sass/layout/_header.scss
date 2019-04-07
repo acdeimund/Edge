@@ -1,9 +1,13 @@
 .site-header{
-  background-color: #ffccaa;
+  background-color: $color__background-secondary;
 
   .custom-logo {
-    max-width: 20rem;
-    margin: 3rem;
+    max-width: 6rem;
+    margin: .5rem;
+    @media (min-width: $sm) {
+      max-width: 20rem;
+      margin: 3rem;
+    }
   }
 
   .site-branding{

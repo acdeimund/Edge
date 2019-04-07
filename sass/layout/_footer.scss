@@ -1,0 +1,21 @@
+.site-footer{
+  padding-top: 10px;
+  background-color: $color__background-secondary;
+  .logo{
+    width: 20rem;
+  }
+  .social-media-icon{
+    width: 5rem;
+  }
+  #footer-sidebar1{
+    text-align: left
+  }
+
+  #footer-sidebar2{
+    text-align: right;    
+  }
+
+  #footer-sidebar3{
+    text-align: center;
+  }
+}

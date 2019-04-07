@@ -33,9 +33,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Alignments
 # Clearings
 # Widgets
+# Header
 # Content
 	## Posts and pages
-	## Comments
+  ## Comments
+# Footer
 # Infinite scroll
 # Media
 	## Captions
@@ -456,6 +458,20 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
+.dd_overlay {
+  width: 150px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: 1; }
+  @media (min-width: 576px) {
+    .dd_overlay {
+      width: 460px;
+      position: absolute;
+      top: 95px;
+      right: 30px;
+      opacity: 1; } }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -714,8 +730,12 @@ a {
 .site-header {
   background-color: #ffccaa; }
   .site-header .custom-logo {
-    max-width: 20rem;
-    margin: 3rem; }
+    max-width: 6rem;
+    margin: .5rem; }
+    @media (min-width: 576px) {
+      .site-header .custom-logo {
+        max-width: 20rem;
+        margin: 3rem; } }
   .site-header .site-branding {
     background-size: cover;
     opacity: 1; }
@@ -755,6 +775,23 @@ a {
 
 .bypostauthor {
   display: block; }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+  padding-top: 10px;
+  background-color: #ffccaa; }
+  .site-footer .logo {
+    width: 20rem; }
+  .site-footer .social-media-icon {
+    width: 5rem; }
+  .site-footer #footer-sidebar1 {
+    text-align: left; }
+  .site-footer #footer-sidebar2 {
+    text-align: right; }
+  .site-footer #footer-sidebar3 {
+    text-align: center; }
 
 /*--------------------------------------------------------------
 # Infinite scroll

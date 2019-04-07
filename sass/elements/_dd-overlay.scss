@@ -1,0 +1,14 @@
+.dd_overlay{
+  width: 150px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: 1;
+  @media(min-width: $sm){
+    width: 460px;
+    position: absolute;
+    top: 95px;
+    right: 30px;
+    opacity: 1;
+  }
+}
