@@ -63,6 +63,7 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+  </header><!-- #masthead -->
+  <div id="primary-nav-spacer"></div>
 
 	<div id="content" class="site-content">

@@ -712,18 +712,15 @@ a {
 # Header
 --------------------------------------------------------------*/
 .site-header {
-  background-color: #ffccaa;
-  opacity: 50%;
-  padding-bottom: 1rem; }
+  background-color: #ffccaa; }
   .site-header .custom-logo {
     max-width: 20rem;
     margin: 3rem; }
   .site-header .site-branding {
-    background-size: cover; }
-  .site-header .menu-primary-container {
-    padding-top: 1rem; }
-    .site-header .menu-primary-container .nav-menu .menu-item {
-      margin: 0 1rem; }
+    background-size: cover;
+    opacity: 1; }
+  .site-header .menu-primary-container .nav-menu .menu-item {
+    margin: 1rem; }
 
 /*--------------------------------------------------------------
 # Content
